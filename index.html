@@ -218,8 +218,10 @@
 
         // Create a video element to stream the camera
         const video = document.createElement("video");
-        video.id = "qrScanner";
-        document.getElementById("customersContent").appendChild(video);
+video.id = "qrScanner";
+video.width = 200; // Set the width (adjust as needed)
+video.height = 200; // Set the height (adjust as needed)
+document.getElementById("customersContent").appendChild(video);
 
         // Start video stream
         navigator.mediaDevices
