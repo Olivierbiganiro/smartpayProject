@@ -1,0 +1,131 @@
+/* :root{
+    --main-color:#d3ad7f;
+    --black:#13131a;
+    --gb:#010103;
+    --border:.1rem solid solid rgba(255,255,255,.3)
+}
+*{
+    font-family: 'Roboto';
+    margin:0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5;
+    overflow: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+    background-color: #13131a;
+}
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: #ffff;
+    border-radius: 5rem;
+
+}
+body{
+    background: var(--gb);
+}
+.header{
+    background: var(--gb);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 10000;
+} */
+/* Style for the fixed navigation bar */
+.navbar-fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensure the navbar is above other content */
+}
+.bg-image-section {
+        background-image: url('/image/rm218batch4-katie-17.jpg'); /* Replace 'pic.png' with your image URL */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        color: #ffffff; /* Text color on top of the background image */
+        text-align: center;
+        padding: 100px 0; /* Adjust the padding as needed */
+        min-height: 100vh; 
+    }
+
+
+
+.profile-userpic img {
+    float: none;
+    margin: 10px;
+    width: 50%;
+    height: 50%;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    border-radius: 50% !important;
+  }
+
+  .zoom-effect {
+    transition: transform 0.3s ease-in-out;
+}
+
+.zoom-effect:hover {
+    transform: scale(1.1); /* Adjust the scale factor for the desired zoom level */
+}
+
+.STEPIN{
+    position: relative;
+}
+
+.STEPIN::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; /* Adjust the height of the gradient line as needed */
+    background: linear-gradient(90deg, #00cc00 50%, #00cc00 50%);
+}
+
+.custom-bg-green {
+    background-color: green;
+    /* You can adjust the shade of green as needed */
+    color: white; /* You may also want to adjust the text color for readability */
+}
+a.read-more-link {
+    color: green;
+}
+
+.text-green {
+    color: green;
+}
+
+.footer hr {
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    border: none; /* Remove border */
+}
+.hr-container {
+    height: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+.custom-hr {
+    border: none;
+    background-color: #9d9c9c; /* Adjust the background color as needed */
+    height: 2px;
+    margin: 0;
+    padding: 0;
+}
